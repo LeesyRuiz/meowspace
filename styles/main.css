@@ -22,17 +22,22 @@ ul li {
 }
 
 a:hover{
-color: blue;
+  color: blue;
 }
 
-/*==========hero image==========*/
+/*==========HERO IMAGE==========*/
 
 .hero{
   width: 100%;
   text-align: center;
-  /*margin: 0;*/
-  margin-top: 0;
+  margin: 0;
   position: relative;
+  display: inline;
+}
+
+.hero img{
+  width: 100%;
+  position: inherit;
 }
 
 .hero h1{
@@ -58,167 +63,139 @@ color: blue;
   z-index: 1;
 }
 
-.hero img{
-  width: inherit;
+
+
+/*==========BLOG POSTS==========*/
+
+#posts {
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  /*padding: 1rem;*/
+  position: inherit;
+  /*top: 550px;*/
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: inline-block;
 }
 
-
- h2{
-line-height: 2em;
-color: green;
-font-size: 4em;
-text-align: center;
-
+h2{
+  /*line-height: 2em;*/
+  font-size: 4em;
+  margin: auto;
+  color: yellow;
+  text-align: center;
 }
 
 article{
-  width: 40%;
-  padding: 10px;
-  border: 1px solid gold;
+  width: 300px;
+  padding: 20px;
+  margin: 30px;
+  border: 2px solid pink;
   box-sizing: border-box;
+  /*display: inline-block;*/
 }
 
-/*==========somehing else==========*/
+#flex {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  flex-direction: row;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 8%;
 
-
-
-
-
-/*a:hover,*/
-/*a:active{ text-decoration: underline; }*/
-
-/* you can structure your code's white space so that it is as readable for when you come back in the future or for other people to read and edit quickly */
-
-/*body{
-font-family: arial; font-size: 80%; line-height: 1.2em; width: 100%; margin: 0; background: #eee;
-}*/
-/* you can put your code all in one line like above */
-/*#page{ margin: 20px; }*/
-
-/* or on different lines like below */
-
-
-/*==========SCALE-IN==========*/
-/*@-webkit-keyframes scale-in {
-0%   {transform: scale(10, 10); opacity: 0;}
-100% {transform: scale(1, 1); opacity: 1;}
 }
 
-@keyframes scale-in {
-0%   {transform: scale(10, 10); opacity: 0;}
-100% {transform: scale(1, 1);  opacity: 1;}
-}*/
-/*==========ROLL-OUT==========*/
-/*@-webkit-keyframes roll-out {
-0%   {width: 0;}
-100% {width: 100%; }
-}
-@keyframes roll-out {
-0%   {width: 0;}
-100% {width: 100%; }
-}
-body{
-background: #392f28;
-}
-main{
-width: 100%;
-overflow: hidden;
-font-family: 'Expletus Sans', cursive;
-}*/
-/*.hero{
-width: 100%;
-/*max-width: 1200px;
-height: 500px;
-text-align: center;
-margin: 0 auto;
+/*==========JOIN THE CLUB==========*/
 
-position: relative;
-/*color: #392f28;
+
+.container {
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
 }
 
-.hero h1{
-font-family: "poppins'";
-font-size: 4.1em;
-margin: auto;
-position: absolute;
-top: 120px;
-left: 0;
-right: 0;
-bottom: 0;
-z-index: 1;
+div {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 50%;
+  padding: 1rem;
 }
-.hero p{
-font-size: 1.5em;
-margin: auto;
-position: inherit;
-top: 400px;
-/*left: 0;
-right: 0;
-bottom: 0;
-z-index: 1;
-}
-.hero img{
-width: inherit;
-}/*
-/*
-.bar{
-width: 100%;
-height: 200px;
-background: -moz-linear-gradient(289deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
-background: -webkit-linear-gradient(289deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
-background: -ms-linear-gradient(289deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
-background: linear-gradient(161deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
-opacity: 0.3;
-position: absolute;
-z-index: 0;
-left: 0;
-top: 90px;
--ms-transform-origin: 100% 0%;
--webkit-transform-origin: 100% 0%;
-transform-origin: 100% 0%;
--webkit-animation: roll-out 1.2s ease-out ;
--moz-animation: roll-out 1.2s ease-out ;
-animation: roll-out 1.2s ease-out ;
-}*/
-/*.hero h1, .hero p{
--webkit-animation: scale-in 1.3s ease-out;
--moz-animation: scale-in 1.3s  ease-out;
-animation: scale-in 1.3s ease-out;
-}*/
 
-/*
-@media all and (max-width: 768px) {
-.hero{
-height: 50vw;
+.left-side {
+  background: #ff9e2c;
 }
-/*.bar{
-height: 26vw;
-top: 10vw;
-}
-.hero h1{
-font-size: 8vw;
-top: 13vw;
-}
-.hero p{
-font-size: 3vw;
-top: 27vw;
-}*/
 
-/*#content{
-font-family: Times;
-margin: 30px 0;
-background: white;
-padding: 60px;
-clear: inherit;
-}*/
-/*
-#footer{
-border-bottom: 1px #ccc solid;
-margin-bottom: 10px;
+.right-side {
+
+  background: #b6701e;
 }
-#footer p{
-text-align: right;
-text-transform: uppercase;
-font-size: 80%;
-color: grey;
-}*/
+.right-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+}
+
+
+
+/*==========EVERYBODY WANTS TO BE A CAT==========*/
+
+
+
+
+.everybody{
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.everybody img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+section h5{
+  font-family: 'Poppins';
+  font-size: 4em;
+  text-align: justify;
+  position: absolute;
+  color: green;
+  /*top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;*/
+  z-index: 1;
+}
+
+/*==========FOOTER==========*/
+footer{
+  width: 100%;
+  /*padding: 20px;
+  margin: 30px;
+  border: 2px solid pink;*/
+  box-sizing: border-box;
+  /*display: inline-block;*/
+  background: coral;
+  height: 200px;
+
+}
+
+
+.disclaimer{
+  display: inline-flex;
+  float: left;
+  flex-flow: wrap;
+  flex-direction: column;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 8%;
+  text-align: center;
+  vertical-align: text-top;
+}
