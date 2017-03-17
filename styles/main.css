@@ -1,32 +1,64 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Questrial');
 
 
+header {
+  position: absolute;
+  width: 100%;
+}
+
+#menu{
+  float: right;
+  /*padding: 20px 0 50px 0;*/
+}
+
+ ul li {
+  /*padding: 10px 5px;*/
+  float: right;
+  margin: 10px 20px 10px 20px;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-transition: all 0.75s ease-in-out;
+  -moz-transition: all 0.75s ease-in-out;
+  -o-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  list-style: none;
+}
+
+a:hover{
+  color: pink;
+}
+
+
+/*==========HEADER==========*/
+
+
+/*
 header nav{
+  font-family: 'Questrial', sans-serif;
   display: inline-block;
-  letter-spacing: .05em;
+  letter-spacing: .1em;
 }
 
 header a{
   text-decoration: none;
-  letter-spacing: .05em;
-  /*position: fixed;*/
-  /*left: 20;
-  text-align: left;
-  /*padding-left: 50px;
-  padding-right: 50px;*/
+  letter-spacing: .1em;
+
+
 }
 
 ul li {
+
+  display: block;
+  float: right;
+  text-align: center;
   display: inline-flex;
   list-style-type: none;
-}
+}*/
 
-a:hover{
-  color: blue;
-}
+
 
 /*==========HERO IMAGE==========*/
-
 .hero{
   width: 100%;
   text-align: center;
@@ -65,15 +97,23 @@ a:hover{
 
 
 
+	h1 p {
+	    display: inline-table;
+      font-size: 3em;
+       line-height:100%;
+       font-family: 'Questrial', sans-serif;
+
+	}
+
+
+
 /*==========BLOG POSTS==========*/
 
 #posts {
   text-align: center;
   vertical-align: middle;
   width: 100%;
-  /*padding: 1rem;*/
-  position: inherit;
-  /*top: 550px;*/
+
   left: 0;
   right: 0;
   bottom: 0;
@@ -82,20 +122,28 @@ a:hover{
 }
 
 h2{
-  /*line-height: 2em;*/
+  font-family: 'Questrial', sans-serif;
+  line-height: 2em;
   font-size: 4em;
   margin: auto;
-  color: yellow;
+  color: pink;
   text-align: center;
 }
 
 article{
+  /*text-decoration: none;*/
   width: 300px;
   padding: 20px;
   margin: 30px;
   border: 2px solid pink;
   box-sizing: border-box;
   /*display: inline-block;*/
+}
+
+a {
+  color: green;
+  text-decoration: none;
+
 }
 
 #flex {
@@ -106,8 +154,9 @@ article{
   margin-left: 4%;
   margin-right: 4%;
   margin-bottom: 8%;
-
 }
+
+
 
 /*==========JOIN THE CLUB==========*/
 
@@ -162,40 +211,46 @@ div {
 }
 
 section h5{
-  font-family: 'Poppins';
+  font-family: 'Questrial', sans-serif;
   font-size: 4em;
   text-align: justify;
   position: absolute;
-  color: green;
-  /*top: 50%;
+  color: yellow;
+  top: 50%;
   left: 0;
   right: 0;
-  bottom: 0;*/
+  bottom: 0;
   z-index: 1;
 }
 
 /*==========FOOTER==========*/
 footer{
+  display: inline-flex;
+  height: 100%;
   width: 100%;
-  /*padding: 20px;
-  margin: 30px;
-  border: 2px solid pink;*/
-  box-sizing: border-box;
-  /*display: inline-block;*/
-  background: coral;
-  height: 200px;
+}
+
+
+div {
+  display: table-cell;
+  width: 50%;
+}
+
+
+
+.disclaimer{
+  color: pink;
+}
+
+.navigation{
 
 }
 
 
-.disclaimer{
-  display: inline-flex;
-  float: left;
-  flex-flow: wrap;
-  flex-direction: column;
-  margin-left: 4%;
-  margin-right: 4%;
-  margin-bottom: 8%;
+div li a{
+  text-decoration: none;
+  list-style-type: none;
   text-align: center;
-  vertical-align: text-top;
+  color: black;
+
 }
